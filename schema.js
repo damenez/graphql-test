@@ -7,6 +7,12 @@ const schema = buildSchema(`
     lastName: String
     gender: Gender
     email: String
+    contacts: [Contact]
+  }
+
+  type Contact {
+    firstName: String
+    lastName: String
   }
 
   enum Gender {
@@ -25,6 +31,12 @@ const schema = buildSchema(`
     lastName: String
     gender: Gender
     email: String
+    contacts: [ContactInput]
+  }
+
+  input ContactInput {
+    firstName: String
+    lastName: String
   }
 
   type Mutation {
