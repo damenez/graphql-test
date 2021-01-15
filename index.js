@@ -1,5 +1,5 @@
 import express from 'express';
-import { schema } from './schema';
+import { schema } from './data/schema';
 import { graphqlHTTP } from 'express-graphql';
 
 const app = express();
