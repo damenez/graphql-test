@@ -1,4 +1,4 @@
-import { makeExecutableSchema, makeRemoteExecutableSchema } from 'graphql-tools';
+import { makeExecutableSchema } from '@graphql-tools/schema';
 import { resolvers } from './resolvers';
 
 const typeDefs = `
@@ -58,4 +58,4 @@ const typeDefs = `
 
 const schema = makeExecutableSchema({typeDefs, resolvers});
 
-export default schema;
+export { schema };

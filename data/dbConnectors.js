@@ -4,7 +4,7 @@ import _ from 'lodash';
 import casual from 'casual';
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://192.168.1.221:27017/friends', {
+mongoose.connect('mongodb://localhost/friends', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
